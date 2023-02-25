@@ -35,3 +35,8 @@
   ansible.builtin.yum:
     name: nginx
     state: installed
+
+- name: Remove old HTTP
+  ansible.builtin.file:
+    path: /usr/share/nginx/html
+    state: absent
