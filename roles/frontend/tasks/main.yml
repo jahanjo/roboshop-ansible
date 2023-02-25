@@ -52,7 +52,7 @@
     dest: /usr/share/nginx/html
     remote_src: yes
 
-- name: opy RoboShop Nginx Config File
+- name: Copy RoboShop Nginx Config File
   ansible.builtin.copy:
     src: roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
@@ -61,3 +61,4 @@
   ansible.builtin.systemd:
     state: restarted
     name: nginx
+    enabled: yes
