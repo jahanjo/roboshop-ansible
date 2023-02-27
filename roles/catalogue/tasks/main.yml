@@ -27,7 +27,7 @@
     remote_src: yes
 
 - name: Install nodejs dependencies
-  community.general.yarn:
+  community.general.npm:
     path: /app
     state: latest
 
