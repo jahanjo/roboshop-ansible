@@ -31,6 +31,13 @@
     path: /app
     state: latest
 
+- name: Load schema
+  community.mongodb.mongodb_shell:
+    login_host: mongodb-dev.jahanjo.online
+    file: "/app/schema/catalogue.js"
+    idempotent: yes
+
+
 - name: Copy systemD file
   ansible.builtin.copy:
     src: catalogue.service
