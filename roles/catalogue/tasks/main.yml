@@ -1,5 +1,5 @@
 - name: Configuring NodeJS Repos
-  ansible.builtin.shell: https://rpm.nodesource.com/setup_lts.x
+  ansible.builtin.shell: https://rpm.nodesource.com/setup_lts.x | bash
 
 - name: install NodeJS
   ansible.builtin.yum:
