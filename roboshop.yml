@@ -1,7 +1,8 @@
 - name:  Setup
   hosts: all
   become: yes
-  roles: user
+  roles:
+    - user
 
 
 
