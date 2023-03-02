@@ -48,7 +48,7 @@
   ansible.builtin.copy:
     src: mongodb.repo
     dest: /etc/yum.repos.d/mongodb.repo
-    when: scchema_load
+    when: schema_load
 
 - name: Install MongoDB Server
   ansible.builtin.yum:
