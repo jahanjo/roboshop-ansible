@@ -60,4 +60,3 @@
     login_host: mongodb-dev.jahanjo.online
     file: "/app/schema/{{component}}.js"
     idempotent: yes
-    when: schema_load
