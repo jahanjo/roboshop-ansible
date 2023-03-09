@@ -1,0 +1,9 @@
+#- name: Import NodeJS
+#  ansible.builtin.import_role:
+#    name: common
+#    tasks_form: nodejs
+
+- name: Import Java
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: java
