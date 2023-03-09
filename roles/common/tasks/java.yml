@@ -25,7 +25,7 @@
   ansible.builtin.include_tasks: "app-prereq.yml"
 
 - name: Maven Build
-  ansible.builtin.shell:
+  ansible.builtin.shell: mvn clean package
   args:
     chdir: /app
 
