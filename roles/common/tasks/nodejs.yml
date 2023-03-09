@@ -10,7 +10,7 @@
     path: /app
     state: latest
 
-- name: SysteD setup
+- name: SystemD setup
   ansible.builtin.include_tasks: "systemd.yml"
 
 - name: Load schema
