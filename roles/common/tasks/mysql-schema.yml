@@ -5,8 +5,6 @@
       - mysql
     state: installed
 
-
-
 - name: Load MySQL schema
   community.mysql.mysql_db:
     state: import
