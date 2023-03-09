@@ -26,8 +26,8 @@
 
 - name: Maven Build
   ansible.builtin.shell:
-  args:
-    chdir: /app
+    args:
+      chdir: /app
 
 - name: SysteD setup
   ansible.builtin.include_tasks: "systemd.yml"
